@@ -1,0 +1,260 @@
+#include <TROOT.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+#include <TPad.h>
+#include <TFile.h>
+#include <TTree.h>
+#include <TBranch.h>
+#include <time.h>
+#include <TLeaf.h>
+#include <math.h>
+#include <iostream>
+#include <fstream>
+#include <time.h>
+#include <unistd.h>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <RooArgSet.h>
+#include <RooRealVar.h>
+#include <RooDataHist.h>
+#include <RooHistPdf.h>
+#include <RooProdPdf.h>
+#include <RooFormulaVar.h>
+#include "/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/get_phys_dists/phys_hist_definitions.h"
+
+void merge_other_triggers(const std::string normal_tree_filename, const std::string other_tree_filename, const std::string treeoutfilename) {
+
+  TFile * normal_tree_file = new TFile(normal_tree_filename.c_str());
+  TFile * other_tree_file = new TFile(other_tree_filename.c_str());
+  std::cout << "Normal tree input file:\n" << normal_tree_filename << std::endl << std::endl;
+  std::cout << "Other tree input file:\n" << other_tree_filename << std::endl << std::endl;
+ 
+  TFile *treeoutfile = new TFile(treeoutfilename.c_str(),"RECREATE");
+  
+  Int_t
+  Run_Number,  Evt_Number,  triggerbit,
+  clockcross,  fvtx_cone;
+  
+  Float_t 
+  Evt_bbcZ,    Wness,
+  charge,      pT,          pz,
+  phi,         eta,         DG0,
+  DDG0,        DG4,         chi2,
+  DCA_z,       DCA_r,       dphi23,
+  dw23,        Rpc1dca,     Rpc3dca,
+  fvtx_dphi,   fvtx_dr,     fvtx_dtheta,
+  fvtx_dr_dtheta;
+
+  normal_tree_file->cd();
+  define_basic_tree(normal_tree_file);
+  TTree *normal_tree = (TTree*)basic_cuts_tree->Clone("normal_tree");
+  
+  other_tree_file->cd();
+  define_basic_tree(other_tree_file);
+  TTree *other_tree = (TTree*)basic_cuts_tree->Clone("other_tree");
+  
+  normal_tree->SetBranchAddress("Run_Number",&Run_Number);
+  normal_tree->SetBranchAddress("Evt_Number",&Evt_Number);
+  normal_tree->SetBranchAddress("triggerbit",&triggerbit);
+  normal_tree->SetBranchAddress("Evt_bbcZ",&Evt_bbcZ);
+  normal_tree->SetBranchAddress("clockcross",&clockcross);
+  normal_tree->SetBranchAddress("Wness",&Wness);
+  normal_tree->SetBranchAddress("charge",&charge);
+  normal_tree->SetBranchAddress("pT",&pT);
+  normal_tree->SetBranchAddress("pz",&pz);
+  normal_tree->SetBranchAddress("phi",&phi);
+  normal_tree->SetBranchAddress("eta",&eta);
+  normal_tree->SetBranchAddress("DG0",&DG0);
+  normal_tree->SetBranchAddress("DDG0",&DDG0);
+  normal_tree->SetBranchAddress("DG4",&DG4);
+  normal_tree->SetBranchAddress("chi2",&chi2);
+  normal_tree->SetBranchAddress("DCA_z",&DCA_z);
+  normal_tree->SetBranchAddress("DCA_r",&DCA_r);
+  normal_tree->SetBranchAddress("dphi23",&dphi23);
+  normal_tree->SetBranchAddress("dw23",&dw23);
+  normal_tree->SetBranchAddress("Rpc1dca",&Rpc1dca);
+  normal_tree->SetBranchAddress("Rpc3dca",&Rpc3dca);
+  normal_tree->SetBranchAddress("fvtx_dphi",&fvtx_dphi);
+  normal_tree->SetBranchAddress("fvtx_dr",&fvtx_dr);
+  normal_tree->SetBranchAddress("fvtx_dtheta",&fvtx_dtheta);
+  normal_tree->SetBranchAddress("fvtx_dr_dtheta",&fvtx_dr_dtheta);
+  normal_tree->SetBranchAddress("fvtx_cone",&fvtx_cone);
+ 
+  other_tree->SetBranchAddress("Run_Number",&Run_Number);
+  other_tree->SetBranchAddress("Evt_Number",&Evt_Number);
+  other_tree->SetBranchAddress("triggerbit",&triggerbit);
+  other_tree->SetBranchAddress("Evt_bbcZ",&Evt_bbcZ);
+  other_tree->SetBranchAddress("clockcross",&clockcross);
+  other_tree->SetBranchAddress("Wness",&Wness);
+  other_tree->SetBranchAddress("charge",&charge);
+  other_tree->SetBranchAddress("pT",&pT);
+  other_tree->SetBranchAddress("pz",&pz);
+  other_tree->SetBranchAddress("phi",&phi);
+  other_tree->SetBranchAddress("eta",&eta);
+  other_tree->SetBranchAddress("DG0",&DG0);
+  other_tree->SetBranchAddress("DDG0",&DDG0);
+  other_tree->SetBranchAddress("DG4",&DG4);
+  other_tree->SetBranchAddress("chi2",&chi2);
+  other_tree->SetBranchAddress("DCA_z",&DCA_z);
+  other_tree->SetBranchAddress("DCA_r",&DCA_r);
+  other_tree->SetBranchAddress("dphi23",&dphi23);
+  other_tree->SetBranchAddress("dw23",&dw23);
+  other_tree->SetBranchAddress("Rpc1dca",&Rpc1dca);
+  other_tree->SetBranchAddress("Rpc3dca",&Rpc3dca);
+  other_tree->SetBranchAddress("fvtx_dphi",&fvtx_dphi);
+  other_tree->SetBranchAddress("fvtx_dr",&fvtx_dr);
+  other_tree->SetBranchAddress("fvtx_dtheta",&fvtx_dtheta);
+  other_tree->SetBranchAddress("fvtx_dr_dtheta",&fvtx_dr_dtheta);
+  other_tree->SetBranchAddress("fvtx_cone",&fvtx_cone);
+ 
+  treeoutfile->cd();
+  define_basic_tree();
+  
+  basic_cuts_tree->SetBranchAddress("Run_Number",&Run_Number);
+  basic_cuts_tree->SetBranchAddress("Evt_Number",&Evt_Number);
+  basic_cuts_tree->SetBranchAddress("triggerbit",&triggerbit);
+  basic_cuts_tree->SetBranchAddress("Evt_bbcZ",&Evt_bbcZ);
+  basic_cuts_tree->SetBranchAddress("clockcross",&clockcross);
+  basic_cuts_tree->SetBranchAddress("Wness",&Wness);
+  basic_cuts_tree->SetBranchAddress("charge",&charge);
+  basic_cuts_tree->SetBranchAddress("pT",&pT);
+  basic_cuts_tree->SetBranchAddress("pz",&pz);
+  basic_cuts_tree->SetBranchAddress("phi",&phi);
+  basic_cuts_tree->SetBranchAddress("eta",&eta);
+  basic_cuts_tree->SetBranchAddress("DG0",&DG0);
+  basic_cuts_tree->SetBranchAddress("DDG0",&DDG0);
+  basic_cuts_tree->SetBranchAddress("DG4",&DG4);
+  basic_cuts_tree->SetBranchAddress("chi2",&chi2);
+  basic_cuts_tree->SetBranchAddress("DCA_z",&DCA_z);
+  basic_cuts_tree->SetBranchAddress("DCA_r",&DCA_r);
+  basic_cuts_tree->SetBranchAddress("dphi23",&dphi23);
+  basic_cuts_tree->SetBranchAddress("dw23",&dw23);
+  basic_cuts_tree->SetBranchAddress("Rpc1dca",&Rpc1dca);
+  basic_cuts_tree->SetBranchAddress("Rpc3dca",&Rpc3dca);
+  basic_cuts_tree->SetBranchAddress("fvtx_dphi",&fvtx_dphi);
+  basic_cuts_tree->SetBranchAddress("fvtx_dr",&fvtx_dr);
+  basic_cuts_tree->SetBranchAddress("fvtx_dtheta",&fvtx_dtheta);
+  basic_cuts_tree->SetBranchAddress("fvtx_dr_dtheta",&fvtx_dr_dtheta);
+  basic_cuts_tree->SetBranchAddress("fvtx_cone",&fvtx_cone);
+ 
+  
+  int entries;
+  int both_count=0;
+  int other_count=0;
+  int percent_done=0;
+  int percent_incriment=5;
+  int percent_done_previous;
+  time_t rawtime;
+
+  entries = other_tree->GetEntries();
+  
+  cout << "\nNumber of events:  " << entries << endl;
+  cout << "Starting Main Event Loop...\n\n";
+  time(&rawtime);
+  printf("Start time:  %s",ctime(&rawtime));
+
+  
+  for(int i=0; i<entries; i++) {//Main loop
+    //loop progress command line output
+    percent_done_previous=percent_done;
+    percent_done=(int)floor((float)(i+1)/(float)entries*(float)100);
+    if(percent_done%percent_incriment==0 && percent_done != percent_done_previous) {
+      printf("%3i%% done",percent_done);
+      if(percent_done==100) {
+        cout << "^_^";
+        time( &rawtime );
+        printf(" %s",ctime(&rawtime));
+      } else {
+        cout << "...";
+        time( &rawtime );
+        printf(" %s",ctime(&rawtime));
+      }
+    }
+    other_tree->GetEntry(i);
+
+    int temp_run_num = Run_Number;
+    int temp_evt_num = Evt_Number;
+
+    //printf("Run:%d Evt:%d\n",Run_Number,Evt_Number);
+
+
+    //do binary search through normal data to check for matching event
+    bool in_both_trees = false;
+    int temp_entries = normal_tree->GetEntries();
+
+    int low=0;
+    int hi=temp_entriesi-1;
+    int mid=floor((low+hi)/2);
+    //do binary search loop
+    while(low<=hi) {
+
+      normal_tree->GetEntry(mid);
+      if(Run_Number<temp_run_num || (Run_Number==temp_run_num && Evt_Number<temp_evt_num)) {
+
+        low = mid+1;
+
+      } else if(Run_Number==temp_run_num && Evt_Number==temp_evt_num) {
+
+        in_both_trees=true;
+        break;
+
+      } else {
+
+        hi = mid-1;
+
+      }
+
+      mid = (low + hi) / 2;
+
+    }       
+
+
+
+    if(!in_both_trees) {
+      other_tree->GetEntry(i);
+      basic_cuts_tree->Fill();
+      other_count++;
+    } else {
+      both_count++;
+    }
+
+  } //end main event loop
+
+  printf("both: %d  other: %d\n",both_count,other_count);
+  
+
+  entries = normal_tree->GetEntries();
+  percent_done=0;
+  percent_incriment=10;
+  for(int i=0; i<entries; i++) {//Main loop
+    //loop progress command line output
+    percent_done_previous=percent_done;
+    percent_done=(int)floor((float)(i+1)/(float)entries*(float)100);
+    if(percent_done%percent_incriment==0 && percent_done != percent_done_previous) {
+      printf("%3i%% done",percent_done);
+      if(percent_done==100) {
+        cout << "^_^";
+        time( &rawtime );
+        printf(" %s",ctime(&rawtime));
+      } else {
+        cout << "...";
+        time( &rawtime );
+        printf(" %s",ctime(&rawtime));
+      }
+    }
+    normal_tree->GetEntry(i);
+
+    basic_cuts_tree->Fill();
+    
+  } //end main event loop
+    
+
+  std::cout << "Saving new combined tree in:\n" << treeoutfilename << std::endl << std::endl;
+  
+  treeoutfile->cd();
+  save_basic_tree();
+  treeoutfile->Close();
+}
+
+

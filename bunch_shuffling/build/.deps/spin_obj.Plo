@@ -1,0 +1,5 @@
+spin_obj.lo: \
+ /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_obj.C \
+ /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_obj.h
+
+/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_obj.h:

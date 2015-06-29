@@ -1,0 +1,55 @@
+AUTOMAKE_OPTIONS = foreign
+
+INCLUDES = -I$(includedir)\
+	   -I$(OFFLINE_MAIN)/include\
+	   -I$(ROOTSYS)/include\
+	   -I/opt/phenix/include\
+	   -I/opt/phenix/include/odbc++
+
+EXLIBS = -L/opt/phenix/lib\
+	 -lodbc++\
+	 -luspin \
+	 -lodbc \
+	 -L$(OFFLINE_MAIN)/lib\
+	 -lphool
+
+LDADD =  $(EXLIBS)
+
+lib_LTLIBRARIES = \
+  libasymmetry_calculation.la
+
+AM_LDFLAGS = -L$(libdir) -L$(OFFLINE_MAIN)/lib `root-config --evelibs` -lRooFitCore -lMinuit -lFoam
+
+AM_CXXFLAGS = `root-config --cflags`
+
+libasymmetry_calculation_la_LDFLAGS = \
+   -L$(OFFLINE_MAIN)/lib -lFROG \
+   `root-config --libs`
+
+libasymmetry_calculation_la_SOURCES = \
+  asymmetry_calculation.C \
+  asymmetry_calculation_Dict.C \
+  W2eGetPol.C
+
+noinst_HEADERS = \
+  W2eGetPol.h
+
+noinst_PROGRAMS = \
+  testexternals
+
+testexternals_SOURCES = testexternals.C
+testexternals_LDADD = libasymmetry_calculation.la
+
+testexternals.C:
+	echo "//*** this is a generated file. Do not commit, do not edit" > $@
+	echo "int main()" >> $@
+	echo "{" >> $@
+	echo "  return 0;" >> $@
+	echo "}" >> $@
+
+asymmetry_calculation_Dict.C: asymmetry_calculation.h asymmetry_calculationLinkDef.h W2eGetPol.h
+	rootcint -f $@ -c $(CINTFLAGS) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $^
+
+clean-local:
+	rm -f *Dict* $(BUILT_SOURCES)
+

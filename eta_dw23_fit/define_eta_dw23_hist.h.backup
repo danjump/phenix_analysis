@@ -1,0 +1,45 @@
+#include <TH2F.h>
+
+
+TH2F * h2_dw23_vs_eta[3][2][2][10];
+TH2F * h2_dw23_vs_wness[3][2][2];
+TH1F * h_wness[3][2][2];
+TH1F * h_dw23[3][2][2][10];
+TH1F * h_wness_sections[3][2][2][10];
+TH1F * h_eta[3][2][2][10];
+
+int nhistbins = 40;
+
+void define_dw23_vs_eta_hists() {
+  
+  char histname[500];
+  
+  for(int source=0; source < 3; source++) {
+    for(int arm=0; arm<n_arms; arm++) {
+      for(int charge=0; charge<2; charge++) {
+        
+        sprintf(histname,"h2_dw23_vs_wness_source%d_arm%d_charge%d",source,arm,charge);
+        h2_dw23_vs_wness[source][arm][charge] = new TH2F(histname,histname,nhistbins,0,1,nhistbins,distmin[11],distmax[11]);
+        
+        sprintf(histname,"h_wness_source%d_arm%d_charge%d",source,arm,charge);
+        h_wness[source][arm][charge] = new TH1F(histname,histname,nhistbins,0,1);
+        
+        for(int wness_section=0; wness_section<10; wness_section++) {
+          
+          sprintf(histname,"h2_dw23_vs_eta_source%d_arm%d_charge%d_wnesscut%d",source,arm,charge,wness_section);
+          h2_dw23_vs_eta[source][arm][charge][wness_section] = new TH2F(histname,histname,nhistbins,distmin[3],distmax[3],nhistbins,distmin[11],distmax[11]);
+          
+          sprintf(histname,"h_dw23_source%d_arm%d_charge%d_wnesscut%d",source,arm,charge,wness_section);
+          h_dw23[source][arm][charge][wness_section] = new TH1F(histname,histname,nhistbins,distmin[11],distmax[11]);
+          
+          sprintf(histname,"h_wness_sections_source%d_arm%d_charge%d_wnesscut%d",source,arm,charge,wness_section);
+          h_wness_sections[source][arm][charge][wness_section] = new TH1F(histname,histname,nhistbins,0,1);
+          
+          sprintf(histname,"h_eta_source%d_arm%d_charge%d_wnesscut%d",source,arm,charge,wness_section);
+          h_eta[source][arm][charge][wness_section] = new TH1F(histname,histname,nhistbins,distmin[3],distmax[3]);
+        }
+      }
+    }
+  }
+
+}

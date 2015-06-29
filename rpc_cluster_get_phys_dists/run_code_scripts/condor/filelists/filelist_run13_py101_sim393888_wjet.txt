@@ -1,0 +1,5 @@
+/direct/phenix+spin2/rseidl/Wsims/run13sim/muonsims/simdata/pytune101_393888/old2/wjet_sum/pdst_wjet_0000000.root
+/direct/phenix+spin2/rseidl/Wsims/run13sim/muonsims/simdata/pytune101_393888/old2/wjet_sum/pdst_wjet_0000001.root
+/direct/phenix+spin2/rseidl/Wsims/run13sim/muonsims/simdata/pytune101_393888/old2/wjet_sum/pdst_wjet_0000002.root
+/direct/phenix+spin2/rseidl/Wsims/run13sim/muonsims/simdata/pytune101_393888/old2/wjet_sum/pdst_wjet_0000003.root
+/direct/phenix+spin2/rseidl/Wsims/run13sim/muonsims/simdata/pytune101_393888/old2/wjet_sum/pdst_wjet_0000004.root

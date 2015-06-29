@@ -1,0 +1,3 @@
+spin_obj.lo: spin_obj.C spin_obj.h
+
+spin_obj.h:

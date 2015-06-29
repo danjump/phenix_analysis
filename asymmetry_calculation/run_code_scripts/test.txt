@@ -1,0 +1,3909 @@
+
+Processing run_asymmetry_totaltrig.C...
+
+[1mRooFit v3.17 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2011 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Reading file:
+/phenix/spin/phnxsp01/danielj/w_asymmetry_analysis_files/run13/wness_tree/run13_data_total_wness_refrun367593.root
+
+Number of events:  936797
+Starting Main Event Loop...
+
+Start time:  Wed Dec  4 16:08:28 2013
+starting asymmetry_count: 0
+1	1	386942	 6932991	100	0	0.008025	20.398642	0.984544
+2	2	387227	 2685634	86	0	0.009284	30.202204	0.982700
+3	3	387292	 3577336	14	0	0.035635	27.184843	0.922659
+4	4	387543	12924112	53	0	0.010198	18.453762	0.929592
+5	5	387661	13138765	57	0	0.039643	18.577621	0.948536
+6	6	387666	 4002282	26	0	0.023271	26.007301	0.981144
+7	7	387670	 8278542	19	0	0.011162	17.631428	0.986668
+8	8	387674	 8369987	70	0	0.015805	17.833870	0.989515
+9	9	387806	 4731902	2	0	0.010813	23.728771	0.994522
+10	10	387806	 4812740	13	0	0.020102	16.152708	0.999223
+11	11	387809	11329751	79	0	0.025581	18.957844	0.980738
+12	12	387967	  352297	3	0	0.007985	25.264086	0.992311
+13	13	388051	 5319866	0	0	0.038887	36.294884	0.983722
+14	14	388539	   99064	90	0	0.008593	34.889053	0.978307
+15	15	388837	 2604653	89	0	0.020355	19.886915	0.979350
+16	16	388837	26865919	26	0	0.049951	48.790703	0.988074
+17	17	388863	 6353399	72	0	-0.004747	17.782701	0.980847
+18	18	389126	 6338635	77	0	0.017244	24.966656	0.933240
+19	19	389334	 3838230	27	0	0.032344	28.567186	0.990114
+20	20	389336	 4969489	91	0	0.027761	17.762310	0.999452
+21	21	389562	  488906	44	0	0.037715	18.430620	0.936915
+22	22	389752	10249541	74	0	0.047060	46.783752	0.927504
+23	23	389909	11530497	15	0	0.025530	17.522724	0.996880
+24	24	390313	 7092261	87	0	0.026703	22.661762	0.923938
+25	25	390539	 2653138	96	0	-0.009271	16.580669	0.969837
+26	26	390959	19367675	9	0	0.033203	22.562103	0.984394
+27	27	391175	 2470746	61	0	0.045949	26.159578	0.991551
+28	28	391175	14624421	46	0	0.021446	25.461235	0.986255
+29	29	391446	 6072179	15	0	0.014296	19.211941	0.999064
+30	30	391446	 9006923	56	0	0.029964	26.630301	0.993973
+31	31	391450	 2681634	119	0	0.041228	25.201607	0.929204
+32	32	391469	18460070	61	0	0.018752	16.900387	0.959280
+33	33	391470	 5921470	14	0	0.032600	17.771578	0.938043
+34	34	391566	12159963	19	0	0.022596	17.151623	0.996716
+35	35	391579	 8570245	81	0	0.017588	16.406609	0.948280
+36	36	391860	 1332551	91	0	0.034785	19.587927	0.950179
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+after wness asymmetry_count: 36
+before wness cut asymmetry_count: 36
+37	37	391871	14610928	61	0	0.014561	17.875893	0.984870
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+after wness asymmetry_count: 37
+before wness cut asymmetry_count: 37
+38	38	391967	 8828213	58	0	0.021786	16.171730	0.991876
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before wness cut asymmetry_count: 38
+after wness asymmetry_count: 38
+before

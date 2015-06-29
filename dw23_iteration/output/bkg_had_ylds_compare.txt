@@ -1,0 +1,6 @@
+raw and trigger efficiency scaled yields for background hadron events from data in the background wness region (0.1<wness<0.7)
+         arm      charge      rawyld  trigscayld
+           0           0        2052        2052
+           0           1        2498        2498
+           1           0        2062        2062
+           1           1        2679        2679

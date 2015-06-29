@@ -1,0 +1,5 @@
+spin_event.lo: \
+ /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_event.C \
+ /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_event.h
+
+/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/bunch_shuffling/spin_event.h:

@@ -1,0 +1,6 @@
+raw and trigger efficiency scaled yields for signal muon simulation events in the target wness region (wness>.92)
+         arm      charge      rawyld  trigscayld
+           0           0      474448      130852
+           0           1      472150      134576
+           1           0      378943      125797
+           1           1      367072      123223

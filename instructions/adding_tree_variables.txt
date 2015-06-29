@@ -1,0 +1,24 @@
+These are the files that need to be changed when adding a tree variable:
+
+get_phys_dists/phys_hist_definitions.h
+  -change n_dists
+  -change arrays with names & bounds
+    -NOTE: if you add to the middle of the array there
+    are several other files with changes required when
+    accessing later array entries.
+  -add branches to definition of basic_cuts_tree and wness_tree
+
+get_phys_dists/get_phys_dists.C
+  -define variable with which to fill (get from input file if needed)
+  -set branch address for basic_cuts_tree
+
+/utilities/combine_files/merge_other_triggers.C
+  -set branch addresses for the 3 trees
+
+/wness_preselection/wness_preselection.C
+  -define a variable and set branch address for basic_cuts_tree
+  -add entries in defining phys_dists[] array
+  -set branch address again for basic_cuts_tree
+  -set branch address for wness_tree
+
+

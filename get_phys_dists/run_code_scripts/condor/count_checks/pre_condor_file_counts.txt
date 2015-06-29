@@ -1,0 +1,29 @@
+run13dataot
+1047 filelist_run13pp510_data_OT.txt
+run13data
+1778 filelist_run13pp510_data.txt
+run13_sim_dy
+5842 filelist_run13_py100_sim393888_dy.txt
+run13_sim_light
+73515 filelist_run13_py100_sim393888_light.txt
+run13_sim_onium
+15042 filelist_run13_py100_sim393888_onium.txt
+run13_sim_onlyz
+1731 filelist_run13_py100_sim393888_onlyz.txt
+run13_sim_openbottom
+7363 filelist_run13_py100_sim393888_openbottom.txt
+run13_sim_opencharm
+58494 filelist_run13_py100_sim393888_opencharm.txt
+run13_sim_w
+1127 filelist_run13_py100_sim393888_w.txt
+run13_sim_whad
+342 filelist_run13_py100_sim393888_whad.txt
+run13_sim_wjet
+737 filelist_run13_py100_sim393888_wjet.txt
+run13_sim_z
+2929 filelist_run13_py100_sim393888_z.txt
+run13_sim_zjet
+734 filelist_run13_py100_sim393888_zjet.txt
+run13_sim_wtau
+343 filelist_run13_py100_sim393888_wtau.txt
+/phenix/u/danielj/my_cvs_dir/run13_analysis/get_phys_dists/run_code_scripts/condor/count_checks

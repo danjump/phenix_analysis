@@ -1,0 +1,119 @@
+32c32
+< #include "eta_dw23_fit.h"
+---
+> #include "sbg_fit.h"
+35c35
+< #include "define_eta_dw23_hist.h"
+---
+> #include "define_sbg_fit_hist.h"
+142c142
+< void eta_dw23_fit( const std::string bkg_had_infilename,
+---
+> void sbg_fit( const std::string bkg_had_infilename,
+154c154
+<   bool save_fit_hists=true;
+---
+>   bool save_fit_hists=false;
+157c157
+<   bool save_sbg_hists=true;
+---
+>   bool save_sbg_hists=false;
+587c587
+<             c_wness_fits->SaveAs("/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/eta_dw23_fit/temp/wness_fits.png");
+---
+>             c_wness_fits->SaveAs("/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/sbg_fit/temp/wness_fits.png");
+882c882
+<           sprintf(name,"/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/eta_dw23_fit/temp/dw23_vs_wness_fit_arm%d_charge%d.png",arm,charge);
+---
+>           sprintf(name,"/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/sbg_fit/temp/dw23_vs_wness_fit_arm%d_charge%d.png",arm,charge);
+888c888
+<     sprintf(name,"/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/eta_dw23_fit/temp/dw23_fits_summary.png");
+---
+>     sprintf(name,"/direct/phenix+WWW/p/draft/danielj/analysis_plots/run13_w_analysis/sbg_fit/temp/dw23_fits_summary.png");
+1270c1270
+<       h_combined_mu_bg_eta[arm][charge]->Smooth(6);
+---
+>       h_combined_mu_bg_eta[arm][charge]->Smooth(2);
+1274c1274
+<       h_sbg_fit_eta[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Smooth(6);
+---
+>       h_sbg_fit_eta[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Smooth(2);
+1279c1279,1301
+<             
+---
+>       //first clone input hists to save to file
+>       if(save_sbg_hists) {
+>         sbg_hists_file->cd();
+>           sprintf(name,"h_sig_mu_eta_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_sig_mu_eta[arm][charge] = (TH1F*)h_sbg_fit_eta[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+>         h_sbg_pdf_sig_mu_eta[arm][charge]->Write();
+>         sprintf(name,"h_sig_mu_dw23_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_sig_mu_dw23[arm][charge] = (TH1F*)h_sbg_fit_dw23[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+>         h_sbg_pdf_sig_mu_dw23[arm][charge]->Write();
+>         sprintf(name,"h_bkg_had_eta_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_bkg_had_eta[arm][charge] = (TH1F*)h_sbg_fit_eta[0][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+>         h_sbg_pdf_bkg_had_eta[arm][charge]->Write();
+>         sprintf(name,"h_bkg_had_dw23_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_bkg_had_dw23[arm][charge] = (TH1F*)h_sbg_fit_dw23[0][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+>         h_sbg_pdf_bkg_had_dw23[arm][charge]->Write();
+>         sprintf(name,"h_bkg_mu_eta_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_bkg_mu_eta[arm][charge] = (TH1F*)h_combined_mu_bg_eta[arm][charge]->Clone(name);
+>         h_sbg_pdf_bkg_mu_eta[arm][charge]->Write();
+>         sprintf(name,"h_bkg_mu_dw23_arm%d_charge%d",arm,charge);
+>         h_sbg_pdf_bkg_mu_dw23[arm][charge] = (TH1F*)h_combined_mu_bg_dw23[arm][charge]->Clone(name);
+>         h_sbg_pdf_bkg_mu_dw23[arm][charge]->Write();
+>       }
+>       
+1294,1329d1315
+<       
+<       //first clone input hists to save to file
+<       if(save_sbg_hists) {
+<         sbg_hists_file->cd();
+<         sprintf(name,"h_sig_mu_eta_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_sig_mu_eta[arm][charge] = (TH1F*)h_sbg_fit_eta[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+<         h_sbg_pdf_sig_mu_eta[arm][charge] = new TH1F(name,name,60,1.1,2.6);
+<         pdf_sig_mu_eta->fillHistogram(h_sbg_pdf_sig_mu_eta[arm][charge],RooArgList(*v_eta[arm][charge]));
+<         h_sbg_pdf_sig_mu_eta[arm][charge]->Write();
+<         sprintf(name,"h_sig_mu_dw23_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_sig_mu_dw23[arm][charge] = (TH1F*)h_sbg_fit_dw23[1][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+<         h_sbg_pdf_sig_mu_dw23[arm][charge] = new TH1F(name,name,100,-.1,.1);
+<         pdf_sig_mu_dw23->fillHistogram(h_sbg_pdf_sig_mu_dw23[arm][charge],RooArgList(*v_dw23[arm][charge]));
+<         h_sbg_pdf_sig_mu_dw23[arm][charge]->Write();
+<         sprintf(name,"h_bkg_had_eta_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_bkg_had_eta[arm][charge] = (TH1F*)h_sbg_fit_eta[0][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+<         h_sbg_pdf_bkg_had_eta[arm][charge] = new TH1F(name,name,60,1.1,2.6);
+<         pdf_bkg_had_eta->fillHistogram(h_sbg_pdf_bkg_had_eta[arm][charge],RooArgList(*v_eta[arm][charge]));
+<         h_sbg_pdf_bkg_had_eta[arm][charge]->Write();
+<         sprintf(name,"h_bkg_had_dw23_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_bkg_had_dw23[arm][charge] = (TH1F*)h_sbg_fit_dw23[0][arm][charge][sbg_rpcdca_choice][sbg_fvtx_choice]->Clone(name);
+<         h_sbg_pdf_bkg_had_dw23[arm][charge] = new TH1F(name,name,100,-.1,.1);
+<         pdf_bkg_had_dw23->fillHistogram(h_sbg_pdf_bkg_had_dw23[arm][charge],RooArgList(*v_dw23[arm][charge]));
+<         h_sbg_pdf_bkg_had_dw23[arm][charge]->Write();
+<         sprintf(name,"h_bkg_mu_eta_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_bkg_mu_eta[arm][charge] = (TH1F*)h_combined_mu_bg_eta[arm][charge]->Clone(name);
+<         h_sbg_pdf_bkg_mu_eta[arm][charge] = new TH1F(name,name,60,1.1,2.6);
+<         pdf_bkg_mu_eta->fillHistogram(h_sbg_pdf_bkg_mu_eta[arm][charge],RooArgList(*v_eta[arm][charge]));
+<         h_sbg_pdf_bkg_mu_eta[arm][charge]->Write();
+<         sprintf(name,"h_bkg_mu_dw23_a%d_q%d",arm,charge);
+<         //h_sbg_pdf_bkg_mu_dw23[arm][charge] = (TH1F*)h_combined_mu_bg_dw23[arm][charge]->Clone(name);
+<         h_sbg_pdf_bkg_mu_dw23[arm][charge] = new TH1F(name,name,100,-.1,.1);
+<         pdf_bkg_mu_dw23->fillHistogram(h_sbg_pdf_bkg_mu_dw23[arm][charge],RooArgList(*v_dw23[arm][charge]));
+<         h_sbg_pdf_bkg_mu_dw23[arm][charge]->Write();
+<       }
+< 
+1421c1407
+<   smout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/eta_dw23_fit/output/sig_mu_yields.txt");
+---
+>   smout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/sbg_fit/output/sig_mu_yields.txt");
+1432c1418
+<   bhout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/eta_dw23_fit/output/bkg_had_yields.txt");
+---
+>   bhout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/sbg_fit/output/bkg_had_yields.txt");
+1443c1429
+<   bmout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/eta_dw23_fit/output/bkg_mu_scaling_yields.txt");
+---
+>   bmout.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/sbg_fit/output/bkg_mu_scaling_yields.txt");
+1456c1442
+<   sbg_outfile.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/eta_dw23_fit/output/sbg_values.txt");
+---
+>   sbg_outfile.open("/direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/sbg_fit/output/sbg_values.txt");

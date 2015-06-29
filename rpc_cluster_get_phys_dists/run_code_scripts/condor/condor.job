@@ -1,0 +1,9 @@
+Universe       = vanilla
+Notification   = Error
+Initialdir     = /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/rpc_cluster_get_phys_dists/run_code_scripts/condor
+Executable     = /direct/phenix+u/workarea/danielj/cvs_code/offline/analysis/danielj/run13_analysis/rpc_cluster_get_phys_dists/run_code_scripts/condor/condor.cmd
+Notify_user    = $ENV(USER)@rcf.rhic.bnl.gov
+GetEnv         = True
++Experiment    = "phenix"
++Job_Type      = "cas"
+Queue 1
