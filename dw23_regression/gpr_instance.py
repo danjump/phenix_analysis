@@ -1,4 +1,5 @@
 import GPy
+import numpy as np
 
 class gpr_instance:
     
@@ -44,6 +45,7 @@ class gpr_instance:
         #print(self.m_uncert)
 
     def generate_predictions(self,predict_coords):
+        self.predict_coords = predict_coords
         self.mean, self.var = self.m.predict(predict_coords)
         self.mean_uncert, self.var_uncert = self.m_uncert.predict(
             predict_coords,
@@ -59,6 +61,67 @@ class gpr_instance:
         del self.kerfix
         del self.keruncert
         del self.m_uncert
+        del self.mean
+        del self.var
+        del self.mean_uncert
+        del self.var_uncert
+        del self.coords
+        del self.values
+        del self.uncert
+        del self.predict_coords
         
     def get_results(self):
         return self.mean, self.var, self.mean_uncert, self.var_uncert 
+
+    def store_scale_factors(self,scale_factors_dict):
+        self.scale_factors = scale_factors_dict
+
+    def apply_rescaling(self):
+        #self.applied_scale_factors = dict()
+        for i in range(0,len(self.predict_coords)):
+            wness = self.predict_coords[i,1]
+            scale_factor = self.calculate_scale_factor(wness)
+            self.mean[i] *= scale_factor
+            self.var[i] *= scale_factor
+            self.mean_uncert[i] *= scale_factor
+            self.var_uncert[i] *= scale_factor
+            #self.applied_scale_factors[wness] = scale_factor
+        del self.scale_factors
+    
+    def calculate_scale_factor(self,wness):
+        wness_scale_points = np.unique(self.coords[:,1])
+        if wness <= wness_scale_points[0]:
+            scale_factor = self.scale_factors[np.around(wness_scale_points[0],2)]
+        elif wness >= wness_scale_points[-1]:
+            scale_factor = self.scale_factors[np.around(wness_scale_points[-1],2)]
+        else:
+            for i in range(0,len(wness_scale_points)-1):
+                if wness > wness_scale_points[i+1]:
+                    continue
+                else:
+                    if np.isclose(wness,wness_scale_points[i]):
+                        scale_factor = self.scale_factors[np.around(wness_scale_points[i],2)]
+                    else:
+                        lower_wness = wness_scale_points[i]
+                        lower_factor = self.scale_factors[lower_wness]
+                        upper_wness = wness_scale_points[i+1]
+                        upper_factor = self.scale_factors[upper_wness]
+                        
+                        lower_weight = (lower_wness-wness)/(upper_wness-lower_wness)
+                        upper_weight = (wness-upper_wness)/(upper_wness-lower_wness)
+                        
+                        scale_factor = lower_factor*lower_weight + upper_factor*upper_weight
+                    break
+                #end else
+            #end for i ....
+        #end else
+        return scale_factor
+        
+
+
+
+
+
+
+
+

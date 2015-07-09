@@ -7,8 +7,8 @@ from gpr_analysis_obj import gpr_analysis_obj
 def main(args):
     args_dict=dict()
 
-    args_dict['do_method_raw'   ] = True
-    args_dict['do_method_scaled'] = False
+    args_dict['do_method_raw'   ] = False
+    args_dict['do_method_scaled'] = True
     args_dict['do_method_log'   ] = False
     args_dict['do_threshold'    ] = np.array([[.9,True],[.8,True],[.7,True]])
     args_dict['input_file'      ] = 'input/dw23_vs_wness_list.txt'

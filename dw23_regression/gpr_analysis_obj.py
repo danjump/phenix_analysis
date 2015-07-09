@@ -44,15 +44,14 @@ class gpr_analysis_obj:
             should result in a flat distribution with respect to wness
             '''
             sum_dict = dict()
-            for dw23 in np.arange(-.29,.31,.02):
-                dw23 = np.around(dw23,2)
-                summed_vs_wness = np.sum(array[array[:,0]==dw23][:,2],axis=0)
-                sum_dict[dw23] = summed_vs_wness
+            for wness in np.unique(array[:,1]):
+                sum_for_slices = np.sum(array[array[:,1]==np.around(wness,2)][:,2],axis=0)
+                sum_dict[np.around(wness,2)] = sum_for_slices
                 
             for i in range(0,len(array)):
-                array[i,2] /= sum_dict[array[i,0]]
-                uncert[i] /= sum_dict[array[i,0]]
-            return array[:,2].reshape(len(array),1), uncert
+                array[i,2] /= sum_dict[np.around(array[i,1],2)]
+                uncert[i] /= sum_dict[np.around(array[i,1],2)]
+            return array[:,2].reshape(len(array),1), uncert, sum_dict
         # end def normalize_vs_wness()
 
         # file contains a list of entries describing bins from
@@ -81,9 +80,10 @@ class gpr_analysis_obj:
                         self.raw_instance[arm][charge][threshold] = gpr_instance('raw',coordinates,values,uncert)
 
                     if self.do_method_scaled:
-                        scaled_values,scaled_uncert = normalize_vs_wness(full_array,uncert)
+                        scaled_values,scaled_uncert,scale_factors = normalize_vs_wness(full_array,uncert)
                         self.scaled_instance[arm][charge][threshold] = \
                                 gpr_instance('scaled',coordinates,scaled_values,scaled_uncert)
+                        self.scaled_instance[arm][charge][threshold].store_scale_factors(scale_factors)
 
                     if self.do_method_log:
                         log_values = np.log(values+2)
@@ -140,11 +140,11 @@ class gpr_analysis_obj:
                         self.raw_instance[arm][charge][threshold].optimize_model()
                         print 'a%dc%dt%.1f raw generate predictions...'%(arm,charge,threshold)
                         self.raw_instance[arm][charge][threshold].generate_predictions(predict_coords)
-                        print 'a%dc%dt%.1f raw clear memory...'%(arm,charge,threshold)
-                        self.raw_instance[arm][charge][threshold].clear_memory()
                         print 'a%dc%dt%.1f raw write results...'%(arm,charge,threshold)
                         results = self.raw_instance[arm][charge][threshold].get_results()
                         self.write_results(results,predict_coords,'raw',arm,charge,threshold)
+                        print 'a%dc%dt%.1f raw clear memory...'%(arm,charge,threshold)
+                        self.raw_instance[arm][charge][threshold].clear_memory()
                         del self.raw_instance[arm][charge][threshold]
                     if self.do_method_scaled:
                         print 'a%dc%dt%.1f scaled create models...'%(arm,charge,threshold)
@@ -153,11 +153,12 @@ class gpr_analysis_obj:
                         self.scaled_instance[arm][charge][threshold].optimize_model()
                         print 'a%dc%dt%.1f scaled generate predictions...'%(arm,charge,threshold)
                         self.scaled_instance[arm][charge][threshold].generate_predictions(predict_coords)
-                        print 'a%dc%dt%.1f scaled clear memory...'%(arm,charge,threshold)
-                        self.scaled_instance[arm][charge][threshold].clear_memory()
+                        self.scaled_instance[arm][charge][threshold].apply_rescaling()
                         print 'a%dc%dt%.1f scaled write results...'%(arm,charge,threshold)
                         results = self.scaled_instance[arm][charge][threshold].get_results()
                         self.write_results(results,predict_coords,'scaled',arm,charge,threshold)
+                        print 'a%dc%dt%.1f scaled clear memory...'%(arm,charge,threshold)
+                        self.scaled_instance[arm][charge][threshold].clear_memory()
                         del self.scaled_instance[arm][charge][threshold]
                     if self.do_method_log:
                         print 'a%dc%dt%.1f log create models...'%(arm,charge,threshold)
@@ -166,11 +167,11 @@ class gpr_analysis_obj:
                         self.log_instance[arm][charge][threshold].optimize_model()
                         print 'a%dc%dt%.1f log generate predictions...'%(arm,charge,threshold)
                         self.log_instance[arm][charge][threshold].generate_predictions(predict_coords)
-                        print 'a%dc%dt%.1f log clear memory...'%(arm,charge,threshold)
-                        self.log_instance[arm][charge][threshold].clear_memory()
                         print 'a%dc%dt%.1f log write results...'%(arm,charge,threshold)
                         results = self.log_instance[arm][charge][threshold].get_results()
                         self.write_results(results,predict_coords,'log',arm,charge,threshold)
+                        print 'a%dc%dt%.1f log clear memory...'%(arm,charge,threshold)
+                        self.log_instance[arm][charge][threshold].clear_memory()
                         del self.log_instance[arm][charge][threshold]
                         
         ####
@@ -193,6 +194,19 @@ class gpr_analysis_obj:
                 var_uncert[i]))
         fout.close()
     # end def write_results
+
+    def write_scale_factors(self,arm,charge,threshold,scale_factors,full_array):
+        filename = 'output/dw23_slice_scale_factors_thr%.1f_a%d_c%d.txt'%(threshold,arm,charge)
+        print('writing scale factors to file: %s'%filename)
+        fout = open(filename, 'w')
+        fout.write("index scale_factor scale_count dw23_bin_center wness_bin_center entries\n")
+        for i in range(0,len(full_array)):
+            fout.write("%5d %12f %11.0f %15f %16f %7f\n"%(i,
+                        1/scale_factors[np.around(full_array[i,1],2)],
+                        scale_factors[np.around(full_array[i,1],2)],
+                        full_array[i,0],
+                        full_array[i,1],
+                        full_array[i,2]))
 
     def testprint(self):
         for arm in range(2):
