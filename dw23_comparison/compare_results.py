@@ -6,6 +6,33 @@ import getopt
 import shelve
 
 
+def main(argv):
+    try:
+        opts, args = getopt.getopt(argv, "h", [])
+        for opt, arg in opts:
+            if opt == '-h':  # help
+                print 'compare_results.py'
+                sys.exit()
+    except getopt.GetoptError:
+        print 'compare_results.py'
+        sys.exit(2)
+
+    for a in (0, 1):
+        for c in (0, 1):
+            data, gpr = get_gpr_results(a, c)
+            print data.info()
+            print ''
+            print gpr.info()
+            print ''
+            fcn = get_fcn_results(a, c, data)
+            print fcn.info()
+            print ''
+            print gpr.head()
+            print ''
+            print fcn.head()
+            plot_slices(data, gpr, fcn)
+
+
 def get_gpr_results(a, c):
     filename = 'input/gpr_a%s_c%s.shelf' % (a, c)
     f = shelve.open(filename, flag='r')
@@ -24,6 +51,7 @@ def read_fcn_fit_params(a, c, method):
 
 def eval_2d_gaus_offset(par, d, w):
     gaus_mean = par[0] + par[1]*w
+    mean_offset = par[13] + par[14]*w
     gaus_sigma1 = par[2] + par[3]*w  # should be wider
     gaus_sigma2 = par[4] + par[5]*w  # should be narrower
     gaus_factor = par[6] + par[7]*w
@@ -40,7 +68,7 @@ def eval_2d_gaus_offset(par, d, w):
     val = polynomial_factor * normalize_factor * \
         (
          np.exp(-0.5*((d-gaus_mean)/gaus_sigma1)**2) +
-         gaus_factor*np.exp(-0.5*((d-gaus_mean)/gaus_sigma2)**2)
+         gaus_factor*np.exp(-0.5*((d-(gaus_mean+mean_offset))/gaus_sigma2)**2)
          )
 
     return val
@@ -78,7 +106,7 @@ def get_fcn_results(a, c, data):
         else:
             integral = 94.155197
     # factor of 2 to account for 60 dw23 binning vs 30 there
-    df['entries'] = df['entries'] * integral / 2
+    df['entries'] = df['entries'] * integral
 
     return df
 
@@ -179,33 +207,6 @@ def plot_slices(data, gpr, fcn):
     ax[1, 0].plot(fcn8, 'g')
 
     plt.show()
-
-
-def main(argv):
-    try:
-        opts, args = getopt.getopt(argv, "h", [])
-        for opt, arg in opts:
-            if opt == '-h':  # help
-                print 'compare_results.py'
-                sys.exit()
-    except getopt.GetoptError:
-        print 'compare_results.py'
-        sys.exit(2)
-
-    for a in (0, 1):
-        for c in (0, 1):
-            data, gpr = get_gpr_results(a, c)
-            print data.info()
-            print ''
-            print gpr.info()
-            print ''
-            fcn = get_fcn_results(a, c, data)
-            print fcn.info()
-            print ''
-            print gpr.head()
-            print ''
-            print fcn.head()
-            plot_slices(data, gpr, fcn)
 
 
 if __name__ == "__main__":

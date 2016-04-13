@@ -131,6 +131,9 @@ def main(argv):
             if plot:
                 data_obj.plot_result_dw23_slices()
 
+            data_obj.export_results()
+
+
     sys.exit(0)
 
 if __name__ == "__main__":

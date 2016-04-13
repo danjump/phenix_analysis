@@ -135,7 +135,9 @@ class data_instance:
         '''
         use the fitted model to predict results
         '''
-        d_binsize = 0.6 / self.d_nbins
+        # change
+        # d_binsize = 0.6 / self.d_nbins
+        d_binsize = 0.6 / 90
         w_binsize = 1.0 / self.w_nbins
         # generate grid of points for which to make predicitions
         x = []
@@ -217,6 +219,11 @@ class data_instance:
         if self.simulate_error:
             f['sim_err_hist'] = self.sim_err_hist
         f.close()
+
+    def export_results(self):
+        filename = 'results/gpr_predictions_a%sc%s.csv' % (
+            self.arm, self.charge)
+        self.dfp.to_csv(filename, index=False)
 
     def read_results(self):
         f = shelve.open(self.filename, flag='r')

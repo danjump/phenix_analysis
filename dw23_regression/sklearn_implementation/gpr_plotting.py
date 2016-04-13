@@ -1,6 +1,6 @@
 import sys
 import getopt
-import pandas as pd
+# import pandas as pd
 
 from data_instance import data_instance
 
@@ -59,19 +59,6 @@ def main(argv):
     except getopt.GetoptError:
         print 'test.py -a <armoption> -c <chargeoption>'
         sys.exit(2)
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow_simerr-10.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow_simerr.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_simerr.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d60w50.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c1_d60w50.shelf/home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow_simerr-10.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_narrow_simerr.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d30w50_simerr.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c0_d60w50.shelf
-        /home/danielj/work/phenix_analysis/run13_analysis/dw23_regression/sklearn_implementation/results/a0_c1_d60w50.shelf
 
     for a in which_arms:
         for c in which_charge:
