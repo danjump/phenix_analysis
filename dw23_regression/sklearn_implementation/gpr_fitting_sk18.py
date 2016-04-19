@@ -37,6 +37,7 @@ def main(argv):
     flatten_wness = False
     bigwidebins = False
     morewings = False
+    noise = False
     d_nbins = 30
 
     # get/parse command line arguments and set variables accordingly
@@ -44,7 +45,8 @@ def main(argv):
         opts, args = getopt.getopt(argv, "sfb:pnha:c:",
                                    ['verbose', 'plot', 'dnbins=',
                                     'narrow', 'skipfit', 'flatw',
-                                    'bigwidebins', 'morewings'])
+                                    'bigwidebins', 'morewings',
+                                    'noise'])
         for opt, arg in opts:
             if opt == '-h':  # help
                 print 'gpr_fitting.py -a <armoption> -c <chargeoption>'
@@ -87,6 +89,8 @@ def main(argv):
                 bigwidebins = True
             elif opt in ('--morewings'):
                 morewings = True
+            elif opt in ('--noise'):
+                noise = True
     except getopt.GetoptError:
         print 'test.py -a <armoption> -c <chargeoption>'
         sys.exit(2)
@@ -110,7 +114,8 @@ def main(argv):
                                      narrow_fit=narrow_fit,
                                      flatten_wness=flatten_wness,
                                      bigwidebins=bigwidebins,
-                                     morewings=morewings)
+                                     morewings=morewings,
+                                     noise=noise)
 
             # -----------------------------------------------------------
             #                  DO FITTING

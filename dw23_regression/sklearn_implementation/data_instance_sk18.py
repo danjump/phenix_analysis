@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from sklearn.gaussian_process import GaussianProcessRegressor
-from sklearn.gaussian_process.kernels import RBF
+from sklearn.gaussian_process.kernels import RBF, WhiteKernel
 
 np.random.seed(1)
 
@@ -16,11 +16,12 @@ class data_instance:
     '''
 
     def __init__(self, a, c,
-                 d_nbins=60, w_nbins=50,
+                 d_nbins=30, w_nbins=50,
                  narrow_fit=False,
                  flatten_wness=False,
                  bigwidebins=False,
-                 morewings=False):
+                 morewings=False,
+                 noise=False):
         self.arm = a
         self.charge = c
         self.d_nbins = d_nbins
@@ -29,6 +30,7 @@ class data_instance:
         self.flatten_wness = flatten_wness
         self.bigwidebins = bigwidebins
         self.morewings = morewings
+        self.noise = noise
 
         tags = ''
         if narrow_fit:
@@ -39,6 +41,8 @@ class data_instance:
             tags = tags + 'bwb_'
         if morewings:
             tags = tags + 'morewing_'
+        if noise:
+            tags = tags + 'noise_'
 
         self.filename = 'results/sk0.18/%sd%dw%d_a%s_c%s.shelf' \
             % (tags, d_nbins, w_nbins, a, c)
@@ -154,12 +158,15 @@ class data_instance:
             y = self.do_flatten_wness()
 
         # define kernel
-        self.kernel = RBF([.1, .1])
+        if self.noise:
+            self.kernel = 1.0 * RBF([.1, .1]) + WhiteKernel(0.1)
+        else:
+            self.kernel = RBF([.1, .1])
 
         # Instanciate a Gaussian Process model
         self.gp = GaussianProcessRegressor(kernel=self.kernel,
                                            alpha=nugget,
-                                           normalize_y=True,
+                                           normalize_y=False,
                                            n_restarts_optimizer=10)
 
         # Fit to data using Maximum Likelihood Estimation of the parameters
@@ -365,7 +372,7 @@ class data_instance:
             .groupby('dw23').agg(np.sum)['entries']
         df8p = self.dfp[(self.dfp['wness'] > .7) & (self.dfp['wness'] < .9)]\
             .groupby('dw23').agg(np.sum)['entries']
-        df9p = self.dfp[(self.dfp['wness'] > .9) & (self.dfp['wness'] < 1)]\
+        df9p = self.dfp[(self.dfp['wness'] > .92) & (self.dfp['wness'] < 1)]\
             .groupby('dw23').agg(np.sum)['entries']
 
         df2ps = self.dfp[(self.dfp['wness'] > .1) & (self.dfp['wness'] < .3)]\
@@ -376,7 +383,7 @@ class data_instance:
             .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
         df8ps = self.dfp[(self.dfp['wness'] > .7) & (self.dfp['wness'] < .9)]\
             .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
-        df9ps = self.dfp[(self.dfp['wness'] > .9) & (self.dfp['wness'] < 1)]\
+        df9ps = self.dfp[(self.dfp['wness'] > .92) & (self.dfp['wness'] < 1)]\
             .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
 
         # plot slices of the results
