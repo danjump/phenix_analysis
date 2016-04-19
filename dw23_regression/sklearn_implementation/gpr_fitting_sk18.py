@@ -37,7 +37,7 @@ def main(argv):
     flatten_wness = False
     bigwidebins = False
     morewings = False
-    d_nbins = 60
+    d_nbins = 30
 
     # get/parse command line arguments and set variables accordingly
     try:
@@ -112,17 +112,14 @@ def main(argv):
                                      bigwidebins=bigwidebins,
                                      morewings=morewings)
 
-            if not skipfit:
-                data_obj.set_data(dfs[int(a)][int(c)])
-
             # -----------------------------------------------------------
             #                  DO FITTING
             # -----------------------------------------------------------
             if skipfit:
                 data_obj.read_results()
             else:
+                data_obj.set_data(dfs[int(a)][int(c)])
                 data_obj.build_dw23wness_hist()
-                break
                 data_obj.fit_gpr_model()
                 data_obj.make_predictions()
                 data_obj.save_results()
@@ -142,7 +139,6 @@ def main(argv):
                 data_obj.plot_result_dw23_slices()
 
             data_obj.export_results()
-
 
     sys.exit(0)
 

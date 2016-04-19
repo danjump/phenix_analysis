@@ -50,14 +50,39 @@ class data_instance:
         # create a binned histogram of entries with respect to dw23 and wness
         dw23bins = np.linspace(-.3, .3, self.d_nbins+1)
         wnessbins = np.linspace(0, 1, self.w_nbins+1)
-        self.hist = self.df.groupby([pd.cut(self.df['dw23'], dw23bins),
-                                     pd.cut(self.df['Wness'], wnessbins)]
-                                    ).count()
+
+        if self.morewings:
+            d_binsize = 0.6 / self.d_nbins
+            dw23bins = np.concatenate((
+                np.arange(-0.5, -0.3, d_binsize),
+                dw23bins,
+                np.arange(0.3+d_binsize, 0.5+d_binsize, d_binsize)))
+
+        # create dw23/wness bins by grouping by both
+        group = self.df.groupby([pd.cut(self.df['dw23'], dw23bins),
+                                 pd.cut(self.df['Wness'], wnessbins)])
+
+        # make yield values for a histogram
+        self.hist = group.count()
+        # get mean values to be used for dw23/wness bin coordinates
+        mean = group.mean()
+
+        # clean up counts to a specific entries column
         self.hist['entries'] = self.hist['Wness']
         self.hist = self.hist[['entries', 'pz']]
         self.hist.reset_index(inplace=True)
         self.hist.drop('pz', axis=1, inplace=True)
         self.hist.fillna(0, inplace=True)
+
+        # clean up mean to specific dw23/wness columns
+        mean['wness_bin_mean'] = mean['Wness']
+        mean['dw23_bin_mean'] = mean['dw23']
+        mean = mean[['wness_bin_mean', 'dw23_bin_mean']]
+        mean.reset_index(inplace=True)
+
+        # put the mean values in the hist dataframe
+        self.hist['wness_bin_mean'] = mean['wness_bin_mean']
+        self.hist['dw23_bin_mean'] = mean['dw23_bin_mean']
 
         def convert_range_str(s):
             '''helper function:
@@ -69,10 +94,21 @@ class data_instance:
 
             return mid
 
+        # get bin centers by parsing the bin range string
         self.hist['dw23_bin_center'] = self.hist['dw23'].apply(
             convert_range_str)
         self.hist['wness_bin_center'] = self.hist['Wness'].apply(
             convert_range_str)
+
+        # build an bin column that equals mean if it exists and center else
+        self.hist['dw23_bin'] = self.hist.apply(lambda x:
+                                                x.dw23_bin_center
+                                                if np.isnan(x.dw23_bin_mean)
+                                                else x.dw23_bin_mean, axis=1)
+        self.hist['wness_bin'] = self.hist.apply(lambda x:
+                                                 x.wness_bin_center
+                                                 if np.isnan(x.wness_bin_mean)
+                                                 else x.wness_bin_mean, axis=1)
 
         # trim the extremes of the wness range
         self.hist = self.hist[(self.hist['wness_bin_center'] > .1) &
@@ -81,10 +117,7 @@ class data_instance:
             self.hist = self.hist[(self.hist['dw23_bin_center'] > -.1) &
                                   (self.hist['dw23_bin_center'] < .1)]
 
-        print hist.
-
     def do_flatten_wness(self):
-        print 'success!'
         self.slice_sums = self.hist.groupby('wness_bin_center').agg(np.sum)
 
         y = []
@@ -94,6 +127,10 @@ class data_instance:
                 self.slice_sums.loc[row['wness_bin_center']]['entries']
 
             y.append(scaled_value)
+
+        self.hist['flat_entries'] = y
+        self.hist['flat_factor'] = \
+            self.hist['entries'] / self.hist['flat_entries']
 
         return y
 
@@ -123,29 +160,27 @@ class data_instance:
         self.gp = GaussianProcessRegressor(kernel=self.kernel,
                                            alpha=nugget,
                                            normalize_y=True,
-                                           n_restarts_optimizer=50)
+                                           n_restarts_optimizer=10)
 
         # Fit to data using Maximum Likelihood Estimation of the parameters
         self.gp.fit(X, y)
 
-    def do_unflatten_wness(self, x, y_pred, sigma):
-        print type(x), x.shape
-        print type(y_pred), y_pred.shape
-        y_unflat = []
-        for i, coords in enumerate(x):
-            print coords[0]
-            if coords[0] in self.slice_sums.index:
-                y_unflat.append(y_pred[i]*self.slice_sums[coords[0]]['entries'])
-            else:
-                done = False
-                next_w = coords[0]
-                while not done:
-                    next_w += .001
-                    if next_w in self.slice_sums.index:
-                        done = True
-                    # if next_w > max ---
+        print self.gp.kernel_
 
-        return y_pred, sigma
+    def do_unflatten_wness(self):
+        self.slice_sums.index = map(str, self.slice_sums.index.values)
+
+        flat_entries = []
+
+        for n, row in self.dfp.iterrows():
+            if str(row['wness']) not in self.slice_sums.index:
+                flat_entries.append(row['entries'])
+            else:
+                flat_entries.append(
+                    row['entries'] *
+                    self.slice_sums.loc[str(row['wness'])]['entries'])
+
+        self.dfp['flat_entries'] = flat_entries
 
     def make_predictions(self):
         '''
@@ -165,14 +200,26 @@ class data_instance:
         # make predictions
         y_pred, sigma = self.gp.predict(x, return_std=True)
 
-        if self.flatten_wness:
-            y_pred, sigma = self.do_unflatten_wness(x, y_pred, sigma)
-
         # create dataframe of prediction results
         self.dfp = pd.DataFrame({'wness': x[:, 0],
                                  'dw23': x[:, 1],
                                  'entries': y_pred,
                                  'sigma': sigma})
+
+        # now make predictions to match bin coordinates
+        chi2_x = self.hist[['wness_bin', 'dw23_bin']].values
+
+        # make predictions
+        y_pred, sigma = self.gp.predict(chi2_x, return_std=True)
+
+        # create dataframe of prediction results
+        self.df_chi2p = pd.DataFrame({'wness': chi2_x[:, 0],
+                                      'dw23': chi2_x[:, 1],
+                                      'entries': y_pred,
+                                      'sigma': sigma})
+
+        if self.flatten_wness:
+            self.do_unflatten_wness()
 
     def get_chi2ndf(self, dw23range='full'):
         '''
@@ -184,33 +231,24 @@ class data_instance:
         rev_chi2 = 0
         rev_count = 0
 
-        # cast these values as strings to avoid faulty float comparison
-        # they will be returned to float at the end
-        self.dfp[['wness', 'dw23']] = self.dfp[['wness', 'dw23']].applymap(str)
+        index = 0
 
         for n, row in self.hist.iterrows():
-            dd = row['dw23_bin_center']  # dw23 from data
+            dd = row['dw23_bin']  # dw23 from data
 
             if dw23range == 'full' or\
                     (dw23range == 'narrow' and dd > -.1 and dd < .1) or\
                     (dw23range == 'wings' and (dd < -.1 or dd > .1)):
-                dd = str(dd)  # dw23 from data
-                wd = str(row['wness_bin_center'])  # wness from data
+                wd = row['wness_bin']  # wness from data
                 ed = row['entries']  # entries from data
                 ud = np.sqrt(ed)  # uncertainty from data
                 if ud == 0:
                     ud = 1
 
-                # entries from fit
-                ef = self.dfp[(self.dfp['dw23'] == dd) &
-                              (self.dfp['wness'] == wd)][
-                                  'entries'].values[0]
-                uf = self.dfp[(self.dfp['dw23'] == dd) &
-                              (self.dfp['wness'] == wd)][
-                                    'sigma'].values[0]
+                ef = self.df_chi2p.loc[index, 'entries']
+                uf = self.df_chi2p.loc[index, 'sigma']
 
                 try:
-
                     chi2 += (ed - ef)**2 / ud**2
                     count += 1
                 except:
@@ -224,9 +262,7 @@ class data_instance:
                     print 'problem with dw23=%.4f wness=%.4f count%d'\
                         % (dd, wd, rev_count)
 
-        # change back the values from strings to floats
-        self.dfp[['wness', 'dw23']] = \
-            self.dfp[['wness', 'dw23']].applymap(float)
+            index += 1
 
         return chi2/(count-1), rev_chi2/(rev_count-1)
 
@@ -236,6 +272,7 @@ class data_instance:
         f['dfp'] = self.dfp
         f['gp'] = self.gp
         f['kernel'] = self.kernel
+        f['df_chi2p'] = self.df_chi2p
         f.close()
 
     def export_results(self):
@@ -247,6 +284,7 @@ class data_instance:
         f = shelve.open(self.filename, flag='r')
         self.hist = f['hist']
         self.dfp = f['dfp']
+        self.df_chi2p = f['df_chi2p']
         f.close()
 
     def plot_2d_hist(self):

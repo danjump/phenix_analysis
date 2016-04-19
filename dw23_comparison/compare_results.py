@@ -19,28 +19,33 @@ def main(argv):
 
     for a in (0, 1):
         for c in (0, 1):
-            data, gpr = get_gpr_results(a, c)
-            print data.info()
-            print ''
-            print gpr.info()
-            print ''
-            fcn = get_fcn_results(a, c, data)
-            print fcn.info()
-            print ''
-            print gpr.head()
-            print ''
-            print fcn.head()
-            plot_slices(data, gpr, fcn)
+            data_basic, gpr_basic, data_morew, dfp_morew = get_gpr_results(a, c)
+
+            fcn = get_fcn_results(a, c, data_basic)
+
+            plot_slices(data_basic, gpr_basic, data_morew, dfp_morew, fcn)
 
 
 def get_gpr_results(a, c):
-    filename = 'input/gpr_a%s_c%s.shelf' % (a, c)
+    path = '../dw23_regression/sklearn_implementation/results/sk0.18/'
+
+    filename = path + 'd30w50_a%d_c%d.shelf' % (a, c)
+    # filename = 'input/gpr_a%s_c%s.shelf' % (a, c)
     f = shelve.open(filename, flag='r')
-    hist = f['hist']
-    dfp = f['dfp']
+    hist_basic = f['hist']
+    dfp_basic = f['dfp']
     f.close()
 
-    return hist, dfp
+    filename = path + 'morewing_d30w50_a%d_c%d.shelf' % (a, c)
+    # filename = 'input/gpr_a%s_c%s.shelf' % (a, c)
+    f = shelve.open(filename, flag='r')
+    hist_morew = f['hist']
+    hist_morew = hist_morew[(hist_morew['dw23_bin_center'] > -0.3) &
+                            (hist_morew['dw23_bin_center'] < 0.3)]
+    dfp_morew = f['dfp']
+    f.close()
+
+    return hist_basic, dfp_basic, hist_morew, dfp_morew
 
 
 def read_fcn_fit_params(a, c, method):
@@ -111,7 +116,7 @@ def get_fcn_results(a, c, data):
     return df
 
 
-def plot_slices(data, gpr, fcn):
+def plot_slices(data, gpr, data_mw, gpr_mw, fcn, plot_both=False):
     # prepare dw23 slices in wness of the results for plotting
     data2 = data[(data['wness_bin_center'] > .1) &
                  (data['wness_bin_center'] < .3)]\
@@ -134,15 +139,41 @@ def plot_slices(data, gpr, fcn):
         .groupby('dw23').agg(np.sum)['entries']
     gpr8 = gpr[(gpr['wness'] > .7) & (gpr['wness'] < .9)]\
         .groupby('dw23').agg(np.sum)['entries']
+    gpr9 = gpr[(gpr['wness'] > .92) & (gpr['wness'] < 1.0)]\
+        .groupby('dw23').agg(np.sum)['entries']
 
     gpr2s = gpr[(gpr['wness'] > .1) & (gpr['wness'] < .3)]\
-        .groupby('dw23').agg(np.sum)['sigma']
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
     gpr4s = gpr[(gpr['wness'] > .3) & (gpr['wness'] < .5)]\
-        .groupby('dw23').agg(np.sum)['sigma']
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
     gpr6s = gpr[(gpr['wness'] > .5) & (gpr['wness'] < .7)]\
-        .groupby('dw23').agg(np.sum)['sigma']
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
     gpr8s = gpr[(gpr['wness'] > .7) & (gpr['wness'] < .9)]\
-        .groupby('dw23').agg(np.sum)['sigma']
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+    gpr9s = gpr[(gpr['wness'] > .92) & (gpr['wness'] < 1.0)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+
+    gpr_mw2 = gpr_mw[(gpr_mw['wness'] > .1) & (gpr_mw['wness'] < .3)]\
+        .groupby('dw23').agg(np.sum)['entries']
+    gpr_mw4 = gpr_mw[(gpr_mw['wness'] > .3) & (gpr_mw['wness'] < .5)]\
+        .groupby('dw23').agg(np.sum)['entries']
+    gpr_mw6 = gpr_mw[(gpr_mw['wness'] > .5) & (gpr_mw['wness'] < .7)]\
+        .groupby('dw23').agg(np.sum)['entries']
+    gpr_mw8 = gpr_mw[(gpr_mw['wness'] > .7) & (gpr_mw['wness'] < .9)]\
+        .groupby('dw23').agg(np.sum)['entries']
+    gpr_mw9 = gpr_mw[(gpr_mw['wness'] > .92) & (gpr_mw['wness'] < 1.0)]\
+        .groupby('dw23').agg(np.sum)['entries']
+
+    gpr_mw2s = gpr_mw[(gpr_mw['wness'] > .1) & (gpr_mw['wness'] < .3)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+    gpr_mw4s = gpr_mw[(gpr_mw['wness'] > .3) & (gpr_mw['wness'] < .5)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+    gpr_mw6s = gpr_mw[(gpr_mw['wness'] > .5) & (gpr_mw['wness'] < .7)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+    gpr_mw8s = gpr_mw[(gpr_mw['wness'] > .7) & (gpr_mw['wness'] < .9)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
+    gpr_mw9s = gpr_mw[(gpr_mw['wness'] > .92) & (gpr_mw['wness'] < 1.0)]\
+        .groupby('dw23').agg(lambda x: np.sum(x**2))['sigma'].apply(np.sqrt)
 
     fcn2 = fcn[(fcn['wness'] > .1) & (fcn['wness'] < .3)]\
         .groupby('dw23').agg(np.sum)['entries']
@@ -168,7 +199,16 @@ def plot_slices(data, gpr, fcn):
                                   (gpr2 + 1.9600 * gpr2s)[::-1]]),
                   alpha=.5, fc='b', ec='None',
                   label='95% confidence interval')
-    ax[0, 0].plot(fcn2, 'g')
+    if plot_both:
+        ax[0, 0].plot(gpr_mw2, 'g')
+        ax[0, 0].fill(np.concatenate([gpr_mw2s.index.values,
+                                      gpr_mw2s.index.values[::-1]]),
+                      np.concatenate([gpr_mw2 - 1.9600 * gpr_mw2s,
+                                      (gpr_mw2 + 1.9600 * gpr_mw2s)[::-1]]),
+                      alpha=.5, fc='g', ec='None',
+                      label='95% confidence interval')
+    ax[0, 0].plot(fcn2, 'black')
+
     ax[0, 1].errorbar(data4.index.values,
                       data4.values, np.sqrt(data4).values,
                       fmt='r.', markersize=10,
@@ -180,7 +220,16 @@ def plot_slices(data, gpr, fcn):
                                   (gpr4 + 1.9600 * gpr4s)[::-1]]),
                   alpha=.5, fc='b', ec='None',
                   label='95% confidence interval')
-    ax[0, 1].plot(fcn4, 'g')
+    if plot_both:
+        ax[0, 1].plot(gpr_mw4, 'g')
+        ax[0, 1].fill(np.concatenate([gpr_mw4s.index.values,
+                                      gpr_mw4s.index.values[::-1]]),
+                      np.concatenate([gpr_mw4 - 1.9600 * gpr_mw4s,
+                                      (gpr_mw4 + 1.9600 * gpr_mw4s)[::-1]]),
+                      alpha=.5, fc='g', ec='None',
+                      label='95% confidence interval')
+    ax[0, 1].plot(fcn4, 'black')
+
     ax[0, 2].errorbar(data6.index.values,
                       data6.values, np.sqrt(data6).values,
                       fmt='r.', markersize=10,
@@ -192,7 +241,16 @@ def plot_slices(data, gpr, fcn):
                                   (gpr6 + 1.9600 * gpr6s)[::-1]]),
                   alpha=.5, fc='b', ec='None',
                   label='95% confidence interval')
-    ax[0, 2].plot(fcn6, 'g')
+    if plot_both:
+        ax[0, 2].plot(gpr_mw6, 'g')
+        ax[0, 2].fill(np.concatenate([gpr_mw6s.index.values,
+                                      gpr_mw6s.index.values[::-1]]),
+                      np.concatenate([gpr_mw6 - 1.9600 * gpr_mw6s,
+                                      (gpr_mw6 + 1.9600 * gpr_mw6s)[::-1]]),
+                      alpha=.5, fc='g', ec='None',
+                      label='95% confidence interval')
+    ax[0, 2].plot(fcn6, 'black')
+
     ax[1, 0].errorbar(data8.index.values,
                       data8.values, np.sqrt(data8).values,
                       fmt='r.', markersize=10,
@@ -204,7 +262,31 @@ def plot_slices(data, gpr, fcn):
                                   (gpr8 + 1.9600 * gpr8s)[::-1]]),
                   alpha=.5, fc='b', ec='None',
                   label='95% confidence interval')
-    ax[1, 0].plot(fcn8, 'g')
+    if plot_both:
+        ax[1, 0].plot(gpr_mw8, 'g')
+        ax[1, 0].fill(np.concatenate([gpr_mw8s.index.values,
+                                      gpr_mw8s.index.values[::-1]]),
+                      np.concatenate([gpr_mw8 - 1.9600 * gpr_mw8s,
+                                      (gpr_mw8 + 1.9600 * gpr_mw8s)[::-1]]),
+                      alpha=.5, fc='g', ec='None',
+                      label='95% confidence interval')
+    ax[1, 0].plot(fcn8, 'black')
+
+    ax[1, 1].plot(gpr9)
+    ax[1, 1].fill(np.concatenate([gpr9s.index.values,
+                                  gpr9s.index.values[::-1]]),
+                  np.concatenate([gpr9 - 1.9600 * gpr9s,
+                                  (gpr9 + 1.9600 * gpr9s)[::-1]]),
+                  alpha=.5, fc='b', ec='None',
+                  label='95% confidence interval')
+    if plot_both:
+        ax[1, 1].plot(gpr_mw9, 'g')
+        ax[1, 1].fill(np.concatenate([gpr_mw9s.index.values,
+                                      gpr_mw9s.index.values[::-1]]),
+                      np.concatenate([gpr_mw9 - 1.9600 * gpr_mw9s,
+                                      (gpr_mw9 + 1.9600 * gpr_mw9s)[::-1]]),
+                      alpha=.5, fc='g', ec='None',
+                      label='95% confidence interval')
 
     plt.show()
 
